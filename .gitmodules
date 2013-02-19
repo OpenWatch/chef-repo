@@ -13,3 +13,6 @@
 [submodule "cookbooks/runit"]
 	path = cookbooks/runit
 	url = git://github.com/opscode-cookbooks/runit.git
+[submodule "cookbooks/ffmpeg"]
+	path = cookbooks/ffmpeg
+	url = git@github.com:OpenWatch/ffmpeg-cookbook.git
