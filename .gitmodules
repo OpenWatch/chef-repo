@@ -1,0 +1,3 @@
+[submodule "cookbooks/nodejs"]
+	path = cookbooks/nodejs
+	url = git@github.com:OpenWatch/nodejs-cookbook.git
