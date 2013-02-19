@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "nodejs": {
+      "version": "0.8.20",
+      "npm": "1.2.11"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[git]",
+    "recipe[nodejs]",
+    "recipe[nodejs::npm]"
+  ]
+}
