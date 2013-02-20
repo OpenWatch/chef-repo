@@ -38,12 +38,16 @@ This is a virtual environment manager for ruby
 Librarian helps tracks the cookbooks and dependencies via a `Cheffile`. Read more about Librarian [here](https://github.com/applicationsonline/librarian).
 
 1. If you don't have it already: `$ gem install librarian`
-2. librarian-chef install --clean --verbose
+2. Ensure the cookbooks directory is empty
+2. From your Chef repo's directory, run `librarian-chef install --clean --verbose`
+    + **Note**: This will delete the contents of `/cookbooks`
 3. Add the following to your knife.rb file
 		
 		require 'librarian/chef/integration/knife'
 			cookbook_path Librarian::Chef.install_path,
 			              "/path/to/chef-repo/site-cookbooks"
+
+	+**Note**: Librarian recommends in-development cookbooks be stored in `/site-cookbooks` rather than being managed by Librarian.
 
 
 ## Notes
