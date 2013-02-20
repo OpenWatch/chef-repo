@@ -1,6 +1,6 @@
 {
   "name": "nodejs",
-  "description": "",
+  "description": "Node and npm",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
@@ -12,9 +12,6 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[apt]",
-    "recipe[build-essential]",
-    "recipe[git]",
     "recipe[nodejs]",
     "recipe[nodejs::npm]"
   ]
