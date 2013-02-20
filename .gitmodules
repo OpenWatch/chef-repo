@@ -1,0 +1,3 @@
+[submodule "site-cookbooks/ow_media_capture"]
+	path = site-cookbooks/ow_media_capture
+	url = git@github.com:OpenWatch/ow-media-capture-cookbook.git
