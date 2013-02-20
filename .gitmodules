@@ -22,3 +22,9 @@
 [submodule "cookbooks/libvpx"]
 	path = cookbooks/libvpx
 	url = git@github.com:OpenWatch/libvpx-cookbook.git
+[submodule "cookbooks/nginx"]
+	path = cookbooks/nginx
+	url = git@github.com:OpenWatch/nginx-cookbook.git
+[submodule "cookbooks/ohai"]
+	path = cookbooks/ohai
+	url = git://github.com/opscode-cookbooks/ohai.git
