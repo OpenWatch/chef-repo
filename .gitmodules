@@ -34,3 +34,6 @@
 [submodule "cookbooks/openssl"]
 	path = cookbooks/openssl
 	url = git://github.com/opscode-cookbooks/openssl.git
+[submodule "cookbooks/redisio"]
+	path = cookbooks/redisio
+	url = git@github.com:OpenWatch/redisio-cookbook.git
