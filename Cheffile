@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'nginx'
+cookbook 'postgresql'
+cookbook 'ffmpeg'
+cookbook 'git'
+cookbook 'couchdb'
+cookbook 'nodejs'
+cookbook 'redisio'
+cookbook 'users'
