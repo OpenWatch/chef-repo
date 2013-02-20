@@ -16,3 +16,9 @@
 [submodule "cookbooks/ffmpeg"]
 	path = cookbooks/ffmpeg
 	url = git@github.com:OpenWatch/ffmpeg-cookbook.git
+[submodule "cookbooks/x264"]
+	path = cookbooks/x264
+	url = git@github.com:OpenWatch/x264-cookbook.git
+[submodule "cookbooks/libvpx"]
+	path = cookbooks/libvpx
+	url = git@github.com:OpenWatch/libvpx-cookbook.git
