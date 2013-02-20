@@ -15,6 +15,8 @@ We specify **roles** for our server with json files in the `./roles` directory o
     		"recipe[nodejs]",
     		"recipe[nodejs::npm]"
   		]
+  		
+  	`recipe[nodejs]` directs Chef to `/cookbooks/nodejs/recipes/default.rb`
 
 + **Attributes** are key-value data that describe the system state. Recipes supply **default attributes**, which can be overridden by role or node **override attributes**. Finally, **[automatic attributes](http://wiki.opscode.com/display/chef/Automatic+Attributes)** represent the state of the target machine during a chef run.
 

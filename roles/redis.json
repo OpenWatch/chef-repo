@@ -1,0 +1,17 @@
+{
+  "name": "redis",
+  "description": "Redis DB",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "couch_db": {
+      "src_version": "1.2.1"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[redisio::default]",
+    "recipe[redisio::install]"
+  ]
+}

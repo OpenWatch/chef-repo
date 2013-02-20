@@ -1,0 +1,16 @@
+{
+  "name": "node_media_capture",
+  "description": "OpenWatch NodeMediaCapture",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[ubuntu]",
+    "role[couch]",
+    "role[nodejs]",
+    
+  ]
+}
