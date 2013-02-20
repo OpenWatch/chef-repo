@@ -37,3 +37,12 @@
 [submodule "cookbooks/redisio"]
 	path = cookbooks/redisio
 	url = git@github.com:OpenWatch/redisio-cookbook.git
+[submodule "cookbooks/couchdb"]
+	path = cookbooks/couchdb
+	url = git://github.com/opscode-cookbooks/couchdb.git
+[submodule "cookbooks/erlang"]
+	path = cookbooks/erlang
+	url = git://github.com/opscode-cookbooks/erlang.git
+[submodule "cookbooks/yum"]
+	path = cookbooks/yum
+	url = git://github.com/opscode-cookbooks/yum.git
