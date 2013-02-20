@@ -23,6 +23,7 @@ This is a virtual environment manager for ruby
 1. `gem install chef`
 2. `cd /chef-repo`
 
+
 ## Bundle Project Secrets
 
 1. `mkdir .chef`
@@ -31,6 +32,18 @@ This is a virtual environment manager for ruby
 	+ Chef User private key (username.pem)
 	+ Knife configuration file (knife.rb)
 	+ Chef Organization private key (organization.pem)
+
+## Setup Librarian
+
+Librarian helps tracks the cookbooks and dependencies via a `Cheffile`. Read more about Librarian [here](https://github.com/applicationsonline/librarian).
+
+1. If you don't have it already: `$ gem install librarian`
+2. librarian-chef install --clean --verbose
+3. Add the following to your knife.rb file
+		
+		require 'librarian/chef/integration/knife'
+			cookbook_path Librarian::Chef.install_path,
+			              "/path/to/chef-repo/site-cookbooks"
 
 
 ## Notes
