@@ -52,6 +52,12 @@ Librarian helps tracks the cookbooks and dependencies via a `Cheffile`. Read mor
 
 ## Notes
 
+#### Developing Cookbooks
+
+When developing cookbooks, be sure to pass a path command to knife to ensure they don't end up in `/cookbooks` to be overwritten by Librarian.
+
+		$ knife cookbook create new_cookbook -o site-cookbooks/
+
 #### If Ruby fails to build
   **Note**: If building halts with an error like that below, you need to install apple-gcc-4.2 with Homebrew.
 
