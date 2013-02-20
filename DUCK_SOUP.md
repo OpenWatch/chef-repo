@@ -1,7 +1,7 @@
-## Duck Soup Chef
+# Duck Soup Chef
 An evolving simplest possible explanation of how Chef works for us.
 
-### Roles
+## Roles
 
 We specify **roles** for our server with json files in the `./roles` directory of our chef repo.
 
@@ -57,3 +57,7 @@ We specify **roles** for our server with json files in the `./roles` directory o
 		    "recipe[nodejs::npm]"
 		  ]
 		}
+
+## Resources and Providers
+
+**Resources** describe a fundamental piece of work i.e: "install package X". **Providers** execute resources based on the target system state i.e: "apt-get install X". **Resources** are a key part of a **recipe**.
