@@ -28,3 +28,9 @@
 [submodule "cookbooks/ohai"]
 	path = cookbooks/ohai
 	url = git://github.com/opscode-cookbooks/ohai.git
+[submodule "cookbooks/postgresql"]
+	path = cookbooks/postgresql
+	url = git@github.com:OpenWatch/postgresql-cookbook.git
+[submodule "cookbooks/openssl"]
+	path = cookbooks/openssl
+	url = git://github.com/opscode-cookbooks/openssl.git
