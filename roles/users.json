@@ -5,7 +5,7 @@
   "default_attributes": {
     "authorization": {
       "sudo": {
-        "groups": ["admins"],
+        "groups": ["admins"]
       }
     }
   },
