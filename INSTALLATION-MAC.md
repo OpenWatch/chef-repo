@@ -59,6 +59,9 @@ Librarian helps tracks the cookbooks and dependencies via a `Cheffile`. Read mor
 
 	+**Note**: Librarian recommends in-development cookbooks be stored in `/site-cookbooks` rather than being managed by Librarian.
 
+5. Upload cookbooks to Chef Server
+
+		$ knife cookbook upload --all
 
 ## Notes
 

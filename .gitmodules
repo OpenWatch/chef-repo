@@ -4,3 +4,6 @@
 [submodule "data_bags"]
 	path = data_bags
 	url = git@github.com:OpenWatch/chef-databags.git
+[submodule "site-cookbooks/ow_users"]
+	path = site-cookbooks/ow_users
+	url = git@github.com:OpenWatch/ow-users-cookbook.git
