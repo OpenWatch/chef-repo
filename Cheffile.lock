@@ -53,6 +53,13 @@ GIT
   specs:
     chef-ssh-wrapper (0.1.1)
 
+GIT
+  remote: https://github.com/fnichol/chef-openssh.git
+  ref: v0.8.3
+  sha: c83917ec7ef66625f36967618e97fdad334e9bcf
+  specs:
+    openssh (0.8.4)
+
 DEPENDENCIES
   chef-ssh-wrapper (>= 0)
   couchdb (>= 0)
@@ -60,6 +67,7 @@ DEPENDENCIES
   git (>= 0)
   nginx (>= 0)
   nodejs (>= 0)
+  openssh (>= 0)
   postgresql (>= 0)
   redisio (>= 0)
   sudo (>= 0)

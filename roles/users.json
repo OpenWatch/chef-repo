@@ -7,7 +7,7 @@
       "sudo": {
         "groups": ["admins"]
       }
-    },
+    }
   },
   "override_attributes": {
     "ow_users": {
