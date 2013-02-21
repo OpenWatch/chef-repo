@@ -3,6 +3,11 @@
   "description": "OpenWatch Users",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "authorization": {
+      "sudo": {
+        "groups": ["admins"],
+      }
+    }
   },
   "override_attributes": {
     "ow_users": {
