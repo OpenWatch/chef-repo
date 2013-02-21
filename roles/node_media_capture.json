@@ -10,7 +10,6 @@
   "run_list": [
     "role[ubuntu]",
     "role[couch]",
-    "role[nodejs]",
-    
+    "role[nodejs]"
   ]
 }
