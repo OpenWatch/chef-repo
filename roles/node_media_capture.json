@@ -11,6 +11,6 @@
     "role[ubuntu]",
     "role[couch]",
     "role[nodejs]",
-    
+    "recipe[capture]"
   ]
 }
