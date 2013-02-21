@@ -1,6 +1,15 @@
 # Installing in Mac OS X
 We're using [JewelryBox](http://jewelrybox.unfiniti.com/) to manage our ruby installation due to potential conflicts between ruby packages and the ruby build bundled with OSX.
 
+## Checkin' out
+To easily clone the repo with all submodules:
+
+		git clone git@github.com:OpenWatch/chef-repo.git --recursive
+		
+To update all submodules after the initial clone.
+
+		git submodule update --init --recursive
+
 ## Preparing Ruby Environment
 
 1. Download [JewelryBox](http://jewelrybox.unfiniti.com/)

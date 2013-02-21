@@ -1,15 +1,24 @@
 # Duck Soup Chef
 An evolving simplest possible explanation of how Chef works for us.
 
-## Roles
+## Explain Like I'm 5
+
+We define machine states as **Roles** i.e: 'redis-server', 'ow-media-capture'. Roles are JSON files in `/roles` composed of **Attributes** and **Recipes**. Attributes are the arguments of Recipes i.e: a recipe installs nginx and sets it to listen on a port specified by an attribute. 
+
+Recipes belong to **Cookbooks**  which are git submodules of our repository.
+
+## Tell Me More
+
+### Roles
 
 We specify **roles** for our server with json files in the `./roles` directory of our chef repo.
 
  A role consists only of **run lists** and **attributes**: 
 
-+ **Run lists** are arrays of **recipes**. **Recipes** are defined in **cookbooks** which reside in the `./cookbooks` directory. We generally pull cookbooks from the community, and define our run lists with a selection of their recipes.
++ **Run lists** are arrays of **recipes**. **Recipes** are defined in **cookbooks** which reside in the `./cookbooks` directory (our home-brewed cookbooks are in `./site-cookbooks`). We generally pull cookbooks from the community, and define our run lists with a selection of their recipes.
 
 		# Example run_list for our node role
+		# Installs nodejs and npm
 		...
 		"run_list": [
     		"recipe[nodejs]",
@@ -58,6 +67,9 @@ We specify **roles** for our server with json files in the `./roles` directory o
 		  ]
 		}
 
-## Resources and Providers
+### Resources and Providers
 
 **Resources** describe a fundamental piece of work i.e: "install package X". **Providers** execute resources based on the target system state i.e: "apt-get install X". **Resources** are a key part of a **recipe**.
+
+### Templates
+
