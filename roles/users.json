@@ -16,6 +16,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[ow_users]"
+    "recipe[ow_users]",
+    "recipe[sudo]"
   ]
 }
