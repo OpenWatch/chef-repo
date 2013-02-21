@@ -37,6 +37,7 @@ SITE
     redisio (1.3.0)
     runit (1.0.4)
       build-essential (>= 0.0.0)
+    sudo (2.0.4)
     user (0.3.0)
     windows (1.8.4)
       chef_handler (>= 0.0.0)
@@ -52,6 +53,13 @@ GIT
   specs:
     chef-ssh-wrapper (0.1.1)
 
+GIT
+  remote: https://github.com/fnichol/chef-openssh.git
+  ref: v0.8.3
+  sha: c83917ec7ef66625f36967618e97fdad334e9bcf
+  specs:
+    openssh (0.8.4)
+
 DEPENDENCIES
   chef-ssh-wrapper (>= 0)
   couchdb (>= 0)
@@ -59,7 +67,9 @@ DEPENDENCIES
   git (>= 0)
   nginx (>= 0)
   nodejs (>= 0)
+  openssh (>= 0)
   postgresql (>= 0)
   redisio (>= 0)
+  sudo (>= 0)
   user (>= 0)
 

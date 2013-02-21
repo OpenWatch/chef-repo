@@ -11,6 +11,6 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[douchdb]",
+    "recipe[couchdb]"
   ]
 }
