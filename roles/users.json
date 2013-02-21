@@ -7,16 +7,21 @@
       "sudo": {
         "groups": ["admins"]
       }
-    }
+    },
   },
   "override_attributes": {
     "ow_users": {
       "admin_gid": 999
+    },
+    "openssh": {
+      "permit_root_login": "no",
+      "password_authentication": "no"
     }
   },
   "chef_type": "role",
   "run_list": [
     "recipe[ow_users]",
-    "recipe[sudo]"
+    "recipe[sudo]",
+    "recipe[openssh]"
   ]
 }
