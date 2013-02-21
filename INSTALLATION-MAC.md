@@ -1,5 +1,4 @@
 # Installing in Mac OS X
-We're using [JewelryBox](http://jewelrybox.unfiniti.com/) to manage our ruby installation due to potential conflicts between ruby packages and the ruby build bundled with OSX.
 
 ## Checkin' out
 To easily clone the repo with all submodules:
@@ -11,6 +10,8 @@ To update all submodules after the initial clone.
 		git submodule update --init --recursive
 
 ## Preparing Ruby Environment
+
+We're using [JewelryBox](http://jewelrybox.unfiniti.com/) to manage our ruby installation due to potential conflicts between ruby packages and the ruby build bundled with OSX.
 
 1. Download [JewelryBox](http://jewelrybox.unfiniti.com/)
 
@@ -69,6 +70,19 @@ Librarian helps tracks the cookbooks and dependencies via a `Cheffile`. Read mor
 When developing cookbooks, be sure to pass a path command to knife to ensure they don't end up in `/cookbooks` to be overwritten by Librarian.
 
 		$ knife cookbook create new_cookbook -o site-cookbooks/
+
+#### Adding a cookbook or LWRP to Librarian
+
+1. Add your new resource to the `Cheffile`
+
+		# Cheffile
+		...
+		cookbook "chef-ssh-wrapper",
+  			:git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"
+
+2. Call the librarian
+
+		librarian-chef install
 
 #### If Ruby fails to build
   **Note**: If building halts with an error like that below, you need to install apple-gcc-4.2 with Homebrew.

@@ -11,3 +11,6 @@ cookbook 'couchdb'
 cookbook 'nodejs'
 cookbook 'redisio'
 cookbook 'user'
+
+cookbook "chef-ssh-wrapper",
+  :git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"

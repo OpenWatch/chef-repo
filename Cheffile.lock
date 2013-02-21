@@ -45,7 +45,15 @@ SITE
       git (>= 0.0.0)
     yum (2.1.0)
 
+GIT
+  remote: https://github.com/OpenWatch/chef-git_ssh_wrapper.git
+  ref: master
+  sha: 7f455f90ee8db5625d17c4513abd50b1d6d020d2
+  specs:
+    chef-ssh-wrapper (0.1.1)
+
 DEPENDENCIES
+  chef-ssh-wrapper (>= 0)
   couchdb (>= 0)
   ffmpeg (>= 0)
   git (>= 0)
