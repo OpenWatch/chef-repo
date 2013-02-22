@@ -100,6 +100,10 @@ When developing cookbooks, be sure to pass a path command to knife to ensure the
 
 		librarian-chef install
 
+#### Updating Cookbooks with Librarian
+
+		$ librarian-chef update
+
 #### If Ruby fails to build
   **Note**: If building halts with an error like that below, you need to install apple-gcc-4.2 with Homebrew.
 
