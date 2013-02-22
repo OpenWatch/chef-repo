@@ -11,7 +11,8 @@
   },
   "override_attributes": {
     "ow_users": {
-      "admin_gid": 999
+      "admin_gid": 999,
+      "active_gids": [999]
     }
   },
   "chef_type": "role",

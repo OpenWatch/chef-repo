@@ -57,3 +57,14 @@ Check the state of a chef `node`:
 		knife node edit <nodename> -e vim
 
 This will produce a json `node` file describing the current machine's attributes and run_list.
+
+## Invoke chef-client
+Here's where we actually get to cookin'.
+
+To bootstrap a freshly imaged server:
+
+		$ knife bootstrap 192.168.1.1 -x username -P PASSWORD --sudo
+
+To force invoke chef-client after a successful bootstrap. Normally this should be accomplished by configuring chef-client as a daemon on the node.
+
+		$ knife ssh 'name:nodeName' 'sudo chef-client' -x username -P PASSWORD --sudo
