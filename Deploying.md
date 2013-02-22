@@ -21,3 +21,15 @@ When you're ready to push your changes to the Chef Server.
 		knife cookbook upload --all
 
 5. TO BE CONTINUED...
+
+Testing
+-------
+
+#### Install Test Kitchen
+
+More info [here](https://github.com/opscode/test-kitchen).
+
+1. `gem install bundler`
+2. `bundle install --binstubs`
+3. `bundle exec kitchen init`
+4. `bundle exec kitchen test`
