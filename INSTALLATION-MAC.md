@@ -62,6 +62,16 @@ Librarian helps tracks the cookbooks and dependencies via a `Cheffile`. Read mor
 
 		$ knife cookbook upload --all
 
+## Installing FoodCritic
+[FoodCritic](http://acrmp.github.com/foodcritic/) is a cookbook linter that requires Ruby 1.9.2+
+
+		$ gem install foodcritic
+		
+To criticize a cookbook invoke:
+
+		$ foodcritic /path/to/cookbook
+		
+
 ## Notes
 
 #### Developing Cookbooks
