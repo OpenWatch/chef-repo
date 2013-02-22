@@ -70,7 +70,14 @@ Librarian helps tracks the cookbooks and dependencies via a `Cheffile`. Read mor
 To criticize a cookbook invoke:
 
 		$ foodcritic /path/to/cookbook
-		
+
+## Installing Knife-sync-all
+[knife-sync-all](https://github.com/cdoughty77/knife-sync-all) wraps knife commands to simplify bulk syncing. To install simply copy [sync-all.rb](https://raw.github.com/cdoughty77/knife-sync-all/master/sync-all.rb) to `./chef/plugins/knife`. Now you can do great things:
+
+		$ knife sync-all -r
+		# syncs all roles
+		$ knife sync-all --help
+		# lists all options
 
 ## Notes
 

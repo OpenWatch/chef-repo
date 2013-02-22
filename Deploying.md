@@ -17,14 +17,16 @@ When you're ready to push your changes to the Chef Server.
 		    # repeat for each user
 		$ knife data bag from file user-passwords passwords.json --secret-file /path/to/encrypted-data-bag-secret
 
+**Note**: knife sync-all doesn't work with encrypted data bags.
 
 ## Sync Cookbooks
 
 Upload all repo cookbooks to the Chef Server:
 
-		knife cookbook upload --all
+		$ knife cookbook upload --all
+or with [knife-sync-all](https://github.com/cdoughty77/knife-sync-all):
 
-5. TO BE CONTINUED...
+		$ knife sync-all -c
 
 Testing
 -------
@@ -41,7 +43,11 @@ More info [here](https://github.com/opscode/test-kitchen).
 ## Sync Roles
 Add roles per-template:
 
-		knife role from file /path/to/role.json
+		$ knife role from file /path/to/role.json
+		
+Or if you've installed [knife-sync-all](https://github.com/cdoughty77/knife-sync-all) one command will do:
+
+		$ knife sync-all -r
 		
 ## Apply Roles
 
