@@ -33,7 +33,6 @@ This is a virtual environment manager for ruby
 1. `gem install chef`
 2. `cd /chef-repo`
 
-
 ## Bundle Project Secrets
 
 1. `mkdir .chef`

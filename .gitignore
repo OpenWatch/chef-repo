@@ -3,3 +3,7 @@
 .DS_Store
 cookbooks/
 tmp/
+bin/
+.bundle/
+test/
+*.orig
