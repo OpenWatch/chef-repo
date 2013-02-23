@@ -5,12 +5,20 @@
   "default_attributes": {
   },
   "override_attributes": {
+    "set_fqdn" : "chef.openwatch.net",
+    "ow_users": {
+      "admin_gid": 999,
+      "active_gids": [0, 500, 999]
+    }
   },
   "chef_type": "role",
   "run_list": [
+    "recipe[hostname]",
     "role[ubuntu]",
+    "role[users]",
+    "role[nginx]",
     "role[couch]",
     "role[nodejs]",
-    "recipe[capture]"
+    "recipe[ow_media_capture]"
   ]
 }

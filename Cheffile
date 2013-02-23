@@ -13,9 +13,12 @@ cookbook 'redisio'
 cookbook 'user'
 cookbook 'sudo'
 
-cookbook "chef-ssh-wrapper",
+cookbook "git-ssh-wrapper",
   :git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"
 
 cookbook "openssh",
   :git => "https://github.com/fnichol/chef-openssh.git",
   :ref => "v0.8.3"
+
+cookbook "hostname",
+  :git => "https://github.com/franco/chef-hostname.git"
