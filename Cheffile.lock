@@ -51,7 +51,7 @@ GIT
   ref: master
   sha: 7f455f90ee8db5625d17c4513abd50b1d6d020d2
   specs:
-    git-ssh-wrapper (0.1.1)
+    git_ssh_wrapper (0.1.1)
 
 GIT
   remote: https://github.com/fnichol/chef-openssh.git
@@ -71,7 +71,7 @@ DEPENDENCIES
   couchdb (>= 0)
   ffmpeg (>= 0)
   git (>= 0)
-  git-ssh-wrapper (>= 0)
+  git_ssh_wrapper (>= 0)
   hostname (>= 0)
   nginx (>= 0)
   nodejs (>= 0)

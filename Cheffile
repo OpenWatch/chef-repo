@@ -13,7 +13,7 @@ cookbook 'redisio'
 cookbook 'user'
 cookbook 'sudo'
 
-cookbook "git-ssh-wrapper",
+cookbook "git_ssh_wrapper",
   :git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"
 
 cookbook "openssh",
