@@ -7,3 +7,6 @@
 [submodule "site-cookbooks/ow_users"]
 	path = site-cookbooks/ow_users
 	url = git@github.com:OpenWatch/ow-users-cookbook.git
+[submodule "site-cookbooks/etherpad-lite"]
+	path = site-cookbooks/etherpad-lite
+	url = git@github.com:OpenWatch/etherpad-lite-cookbook.git
