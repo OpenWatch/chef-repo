@@ -63,7 +63,8 @@ Here's where we actually get to cookin'.
 
 To bootstrap a freshly imaged server:
 
-		$ knife bootstrap 192.168.1.1 -x username -P PASSWORD --sudo
+		$ knife bootstrap chef.openwatch.net -x username -P PASSWORD -r "role[node_media_capture]" -N "unique-client-name" --sudo
+
 
 To force invoke chef-client after a successful bootstrap. Normally this should be accomplished by configuring chef-client as a daemon on the node.
 
