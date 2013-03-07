@@ -22,3 +22,6 @@ cookbook "openssh",
 
 cookbook "hostname",
   :git => "https://github.com/franco/chef-hostname.git"
+
+cookbook "application_python",
+  :git => "https://github.com/opscode-cookbooks/application_python.git"
