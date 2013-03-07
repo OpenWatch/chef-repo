@@ -1,14 +1,17 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
+    application (2.0.0)
     apt (1.9.0)
+    aws (0.100.6)
     build-essential (1.3.4)
     chef_handler (1.1.4)
-    couchdb (2.1.0)
+    couchdb (2.2.0)
       erlang (>= 0.0.0)
       yum (>= 0.0.0)
     dmg (1.1.0)
-    erlang (1.1.2)
+    erlang (1.2.0)
+      build-essential (>= 0.0.0)
       yum (>= 0.5.0)
     ffmpeg (0.2.1)
       build-essential (>= 0.0.0)
@@ -21,29 +24,44 @@ SITE
       runit (~> 1.0)
       windows (>= 0.0.0)
       yum (>= 0.0.0)
+    gunicorn (1.1.0)
+      python (>= 0.0.0)
     libvpx (0.2.0)
       build-essential (>= 0.0.0)
       git (>= 0.0.0)
-    nginx (1.3.0)
+    mysql (2.1.2)
+      build-essential (>= 0.0.0)
+      openssl (>= 0.0.0)
+    nginx (1.4.0)
+      apt (>= 0.0.0)
       build-essential (>= 0.0.0)
       ohai (>= 1.1.4)
-    nodejs (1.0.2)
+      yum (>= 0.0.0)
+    nodejs (1.0.4)
       apt (>= 0.0.0)
       build-essential (>= 0.0.0)
     ohai (1.1.8)
     openssl (1.0.0)
     postgresql (2.2.2)
       openssl (>= 0.0.0)
-    redisio (1.3.0)
-    runit (1.0.4)
+    python (1.2.2)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+    redisio (1.4.1)
+      ulimit (>= 0.1.2)
+    runit (1.1.0)
       build-essential (>= 0.0.0)
     sudo (2.0.4)
+    supervisor (0.4.0)
+      python (>= 0.0.0)
+    ulimit (0.1.3)
     user (0.3.0)
     windows (1.8.4)
       chef_handler (>= 0.0.0)
     x264 (0.3.0)
       build-essential (>= 0.0.0)
       git (>= 0.0.0)
+    xfs (1.1.0)
     yum (2.1.0)
 
 GIT
@@ -67,8 +85,32 @@ GIT
   specs:
     hostname (1.0.0)
 
+GIT
+  remote: https://github.com/opscode-cookbooks/application_python.git
+  ref: master
+  sha: 3847d1d1962e976960ec970ed731b19f8f64be0a
+  specs:
+    application_python (1.0.8)
+      application (>= 0.0.0)
+      gunicorn (>= 0.0.0)
+      python (>= 0.0.0)
+      supervisor (>= 0.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/database.git
+  ref: master
+  sha: cc6b4d746841acf321ff69b3b5e8f120e00f1db6
+  specs:
+    database (1.3.12)
+      aws (>= 0.0.0)
+      mysql (>= 1.3.0)
+      postgresql (>= 1.0.0)
+      xfs (>= 0.0.0)
+
 DEPENDENCIES
+  application_python (>= 0)
   couchdb (>= 0)
+  database (>= 0)
   ffmpeg (>= 0)
   git (>= 0)
   git_ssh_wrapper (>= 0)
