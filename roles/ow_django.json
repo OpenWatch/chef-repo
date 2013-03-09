@@ -1,5 +1,5 @@
 {
-  "name": "ow_server",
+  "name": "ow_django",
   "description": "OpenWatch base webserver",
   "json_class": "Chef::Role",
   "default_attributes": {
@@ -8,12 +8,18 @@
     "ow_users": {
       "admin_gid": 999,
       "active_gids": [0, 500, 999]
+    },
+    "postgresql":{
+      "password":{
+        "postgres": "YcxBWZOSJzPyPUgvicqHFNjvvSyx0ScTZQoWpjyYzSgQZZt3Rr"
+      }
     }
   },
   "chef_type": "role",
   "run_list": [
-    "role[ubuntu]",
-    "role[users]",
-    "role[nginx]"
+    "role[ow_server]",
+    "recipe[postgresql::server]",
+    "recipe[database::postgresql]",
+    "recipe[ow_python]"
   ]
 }
