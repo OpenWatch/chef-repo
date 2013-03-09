@@ -13,3 +13,6 @@
 [submodule "site-cookbooks/ow_python"]
 	path = site-cookbooks/ow_python
 	url = git@github.com:OpenWatch/ow-python-cookbook.git
+[submodule "site-cookbooks/ow_etherpad"]
+	path = site-cookbooks/ow_etherpad
+	url = git@github.com:OpenWatch/ow-etherpad-cookbook.git
