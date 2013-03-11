@@ -1,6 +1,6 @@
 {
   "name": "ow_server",
-  "description": "OpenWatch base webserver",
+  "description": "OpenWatch base webserver. Creates ow user accounts and prepares SSL cert / key",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
@@ -14,6 +14,7 @@
   "run_list": [
     "role[ubuntu]",
     "role[users]",
-    "role[nginx]"
+    "role[nginx]",
+    "recipe[ow_webserver]"
   ]
 }
