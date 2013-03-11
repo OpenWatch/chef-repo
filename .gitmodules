@@ -16,3 +16,6 @@
 [submodule "site-cookbooks/ow_etherpad"]
 	path = site-cookbooks/ow_etherpad
 	url = git@github.com:OpenWatch/ow-etherpad-cookbook.git
+[submodule "site-cookbooks/ow_webserver"]
+	path = site-cookbooks/ow_webserver
+	url = git@github.com:OpenWatch/ow-webserver-cookbook.git
