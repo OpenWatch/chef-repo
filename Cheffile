@@ -13,6 +13,7 @@ cookbook 'redisio'
 cookbook 'user'
 cookbook 'sudo'
 cookbook 'application'
+cookbook 'application_python'
 
 cookbook "git_ssh_wrapper",
   :git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"
@@ -23,10 +24,6 @@ cookbook "openssh",
 
 cookbook "hostname",
   :git => "https://github.com/franco/chef-hostname.git"
-
-# in site-cookbooks during development
-#cookbook "application_python",
-#  :git => "https://github.com/OpenWatch/application_python.git"
 
 cookbook "database",
   :git => "https://github.com/opscode-cookbooks/database.git"
