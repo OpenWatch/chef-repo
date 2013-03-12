@@ -8,11 +8,6 @@
     "ow_users": {
       "admin_gid": 999,
       "active_gids": [0, 500, 999]
-    },
-    "postgresql":{
-      "password":{
-        "postgres": "YcxBWZOSJzPyPUgvicqHFNjvvSyx0ScTZQoWpjyYzSgQZZt3Rr"
-      }
     }
   },
   "chef_type": "role",
