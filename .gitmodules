@@ -19,6 +19,3 @@
 [submodule "site-cookbooks/ow_webserver"]
 	path = site-cookbooks/ow_webserver
 	url = git@github.com:OpenWatch/ow-webserver-cookbook.git
-[submodule "site-cookbooks/application_python"]
-	path = site-cookbooks/application_python
-	url = git@github.com:OpenWatch/application_python.git
