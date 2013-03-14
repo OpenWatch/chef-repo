@@ -19,3 +19,6 @@
 [submodule "site-cookbooks/ow_webserver"]
 	path = site-cookbooks/ow_webserver
 	url = git@github.com:OpenWatch/ow-webserver-cookbook.git
+[submodule "site-cookbooks/npm"]
+	path = site-cookbooks/npm
+	url = git@github.com:OpenWatch/chef-npm.git

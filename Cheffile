@@ -14,7 +14,6 @@ cookbook 'user'
 cookbook 'sudo'
 cookbook 'application'
 cookbook 'application_python'
-cookbook 'npm'
 
 cookbook "git_ssh_wrapper",
   :git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"
@@ -28,3 +27,4 @@ cookbook "hostname",
 
 cookbook "database",
   :git => "https://github.com/opscode-cookbooks/database.git"
+
