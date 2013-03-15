@@ -5,10 +5,6 @@
   "default_attributes": {
   },
   "override_attributes": {
-    "ow_users": {
-      "admin_gid": 999,
-      "active_gids": [0, 500, 999]
-    }
   },
   "chef_type": "role",
   "run_list": [
