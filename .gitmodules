@@ -22,3 +22,6 @@
 [submodule "site-cookbooks/npm"]
 	path = site-cookbooks/npm
 	url = git@github.com:OpenWatch/chef-npm.git
+[submodule "site-cookbooks/ow_media_process"]
+	path = site-cookbooks/ow_media_process
+	url = git@github.com:OpenWatch/ow-media-process-cookbook.git
