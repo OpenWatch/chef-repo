@@ -1,0 +1,14 @@
+{
+  "name": "ow_media_server",
+  "description": "OpenWatch NodeMediaCapture and NodeMediaProcess combined server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[node_media_capture]",
+    "role[node_media_process]"
+  ]
+}
