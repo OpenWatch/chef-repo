@@ -8,6 +8,9 @@
     "ow_users": {
       "admin_gid": 999,
       "active_gids": [0, 500, 999]
+    },
+    "ow_webserver" : {
+      "postgres_backup_databases" : ["openwatch"]
     }
   },
   "chef_type": "role",
@@ -15,6 +18,7 @@
     "role[ow_server]",
     "recipe[postgresql::server]",
     "recipe[database::postgresql]",
+    "recipe[ow_webserver::postgres_backups]",
     "recipe[ow_python]"
   ]
 }
