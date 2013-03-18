@@ -16,6 +16,7 @@ cookbook 'application'
 cookbook 'application_python'
 cookbook 'yasm'
 cookbook 'ubuntu'
+cookbook 'database'
 
 cookbook "git_ssh_wrapper",
   :git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"
@@ -26,7 +27,3 @@ cookbook "openssh",
 
 cookbook "hostname",
   :git => "https://github.com/franco/chef-hostname.git"
-
-cookbook "database",
-  :git => "https://github.com/opscode-cookbooks/database.git"
-
