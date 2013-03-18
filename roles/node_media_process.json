@@ -1,0 +1,20 @@
+{
+  "name": "node_media_process",
+  "description": "OpenWatch NodeMediaProcess",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[ubuntu]",
+    "role[ow_server]",
+    "recipe[yasm::source]",
+    "recipe[redisio::install]",
+    "recipe[redisio::enable]",
+    "recipe[ffmpeg]",
+    "role[nodejs]",
+    "recipe[ow_media_process]"
+  ]
+}

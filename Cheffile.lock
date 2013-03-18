@@ -57,6 +57,8 @@ SITE
     sudo (2.0.4)
     supervisor (0.4.0)
       python (>= 0.0.0)
+    ubuntu (1.1.2)
+      apt (>= 0.0.0)
     ulimit (0.1.3)
     user (0.3.0)
     windows (1.8.4)
@@ -65,6 +67,9 @@ SITE
       build-essential (>= 0.0.0)
       git (>= 0.0.0)
     xfs (1.1.0)
+    yasm (0.0.3)
+      build-essential (>= 0.0.0)
+      git (>= 0.0.0)
     yum (2.1.0)
 
 GIT
@@ -114,5 +119,7 @@ DEPENDENCIES
   postgresql (>= 0)
   redisio (>= 0)
   sudo (>= 0)
+  ubuntu (>= 0)
   user (>= 0)
+  yasm (>= 0)
 
