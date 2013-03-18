@@ -116,7 +116,6 @@ DEPENDENCIES
   git_ssh_wrapper (>= 0)
   hostname (>= 0)
   nginx (>= 0)
-  nodejs (>= 0)
   openssh (>= 0)
   postgresql (>= 0)
   redisio (>= 0)
