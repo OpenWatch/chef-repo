@@ -28,3 +28,9 @@
 [submodule "site-cookbooks/nodejs"]
 	path = site-cookbooks/nodejs
 	url = git@github.com:OpenWatch/nodejs-cookbook.git
+[submodule "site-cookbooks/sentry"]
+	path = site-cookbooks/sentry
+	url = git@github.com:OpenWatch/sentry-cookbook.git
+[submodule "site-cookbooks/ow_sentry"]
+	path = site-cookbooks/ow_sentry
+	url = git@github.com:chrisballinger/ow-sentry-cookbook.git

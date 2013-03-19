@@ -16,6 +16,7 @@ cookbook 'application'
 cookbook 'application_python'
 cookbook 'yasm'
 cookbook 'ubuntu'
+cookbook 'database'
 
 cookbook "git_ssh_wrapper",
   :git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"
@@ -23,12 +24,6 @@ cookbook "git_ssh_wrapper",
 cookbook "openssh",
   :git => "https://github.com/fnichol/chef-openssh.git",
   :ref => "v0.8.3"
-
-cookbook "hostname",
-  :git => "https://github.com/franco/chef-hostname.git"
-
-cookbook "database",
-  :git => "https://github.com/opscode-cookbooks/database.git"
 
 cookbook "vt-gpg",
   :git => "https://github.com/VendaTech/chef-cookbook-gpg.git"

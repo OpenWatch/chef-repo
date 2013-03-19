@@ -1,12 +1,12 @@
 {
-  "name": "ow_etherpad",
-  "description": "OpenWatch etherpad webserver",
+  "name": "ow_sentry",
+  "description": "OpenWatch base webserver",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
   "override_attributes": {
     "ow_webserver" : {
-      "postgres_backup_databases" : ["etherpad"]
+      "postgres_backup_databases" : ["sentry"]
     }
   },
   "chef_type": "role",
@@ -15,6 +15,6 @@
     "recipe[postgresql::server]",
     "recipe[database::postgresql]",
     "recipe[ow_webserver::postgres_backups]",
-    "recipe[ow_etherpad]"
+    "recipe[ow_sentry]"
   ]
 }
