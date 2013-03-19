@@ -1,0 +1,20 @@
+{
+  "name": "ow_sentry",
+  "description": "OpenWatch base webserver",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "ow_webserver" : {
+      "postgres_backup_databases" : ["sentry"]
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[ow_server]",
+    "recipe[postgresql::server]",
+    "recipe[database::postgresql]",
+    "recipe[ow_webserver::postgres_backups]",
+    "recipe[ow_sentry]"
+  ]
+}
