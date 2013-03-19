@@ -30,3 +30,5 @@ cookbook "hostname",
 cookbook "database",
   :git => "https://github.com/opscode-cookbooks/database.git"
 
+cookbook "vt-gpg",
+  :git => "https://github.com/VendaTech/chef-cookbook-gpg.git"

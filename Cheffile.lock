@@ -42,9 +42,6 @@ SITE
       build-essential (>= 0.0.0)
       ohai (>= 1.1.4)
       yum (>= 0.0.0)
-    nodejs (1.1.0)
-      apt (>= 0.0.0)
-      build-essential (>= 0.0.0)
     ohai (1.1.8)
     openssl (1.0.2)
     postgresql (2.2.2)
@@ -80,6 +77,13 @@ GIT
   sha: 7f455f90ee8db5625d17c4513abd50b1d6d020d2
   specs:
     git_ssh_wrapper (0.1.1)
+
+GIT
+  remote: https://github.com/VendaTech/chef-cookbook-gpg.git
+  ref: master
+  sha: 8528c77f86dcef4ca683b821c00cb555bbd63054
+  specs:
+    vt-gpg (1.0.0)
 
 GIT
   remote: https://github.com/fnichol/chef-openssh.git
@@ -122,5 +126,6 @@ DEPENDENCIES
   sudo (>= 0)
   ubuntu (>= 0)
   user (>= 0)
+  vt-gpg (>= 0)
   yasm (>= 0)
 
