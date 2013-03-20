@@ -66,16 +66,16 @@ Vagrant::Config.run do |config|
   # path, and data_bags path (all relative to this Vagrantfile), and adding 
   # some recipes and/or roles.
   #
-  # config.vm.provision :chef_solo do |chef|
-  #   chef.cookbooks_path = "../my-recipes/cookbooks"
-  #   chef.roles_path = "../my-recipes/roles"
-  #   chef.data_bags_path = "../my-recipes/data_bags"
-  #   chef.add_recipe "mysql"
-  #   chef.add_role "web"
-  #
-  #   # You may also specify custom JSON attributes:
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["./cookbooks", "./site-cookbooks"]
+    chef.roles_path = "./roles"
+    chef.data_bags_path = "./data_bags"
+    chef.encrypted_data_bag_secret_key_path = '.chef/encrypted_data_bag_secret'
+    chef.add_recipe "ow_sentry"
+    #chef.add_role "ow_sentry"
+  # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
-  # end
+  end
 
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).
@@ -90,16 +90,13 @@ Vagrant::Config.run do |config|
 
   # TODO update chef-client to latest before actual run so it doesn't fail
 
-  config.vm.provision :chef_client do |chef|
-    chef.chef_server_url = "https://api.opscode.com/organizations/openwatch"
-    chef.validation_key_path = ".chef/openwatch-validator.pem"
-    chef.validation_client_name = "openwatch-validator"
-    chef.encrypted_data_bag_secret_key_path = '.chef/encrypted_data_bag_secret'
-    chef.run_list = ["role[ow_server]",
-      "recipe[postgresql::server]",
-      "recipe[database::postgresql]",
-      "recipe[ow_etherpad]"]
-  end
+  #config.vm.provision :chef_client do |chef|
+  #  chef.chef_server_url = "https://api.opscode.com/organizations/openwatch"
+  #  chef.validation_key_path = ".chef/openwatch-validator.pem"
+  #  chef.validation_client_name = "openwatch-validator"
+  #  chef.encrypted_data_bag_secret_key_path = '.chef/encrypted_data_bag_secret'
+  #  chef.run_list = ["role[ow_sentry]"]
+  #end
   #
   # If you're using the Opscode platform, your validator client is
   # ORGNAME-validator, replacing ORGNAME with your organization name.
