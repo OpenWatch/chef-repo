@@ -15,6 +15,7 @@
     "role[ubuntu]",
     "role[users]",
     "role[nginx]",
+    "recipe[vt-gpg]",
     "recipe[ow_webserver]"
   ]
 }

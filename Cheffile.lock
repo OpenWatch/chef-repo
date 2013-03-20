@@ -84,6 +84,13 @@ GIT
     git_ssh_wrapper (0.1.1)
 
 GIT
+  remote: https://github.com/VendaTech/chef-cookbook-gpg.git
+  ref: master
+  sha: 8528c77f86dcef4ca683b821c00cb555bbd63054
+  specs:
+    vt-gpg (1.0.0)
+
+GIT
   remote: https://github.com/fnichol/chef-openssh.git
   ref: v0.8.3
   sha: c83917ec7ef66625f36967618e97fdad334e9bcf
@@ -113,5 +120,6 @@ DEPENDENCIES
   sudo (>= 0)
   ubuntu (>= 0)
   user (>= 0)
+  vt-gpg (>= 0)
   yasm (>= 0)
 
