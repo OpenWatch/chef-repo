@@ -4,7 +4,20 @@
 		
 
 # Restoring
+
+## 1. Decrypt
+
+Assuming you've set up gpg with the appropriate private key.
+
+		gpg -o output_file -d input_file
+
 	
+## 2. Decompress
+
+		xz -d input_file
+		
+
+## 3. Restore
 If restoring to a fresh database:
 	
 		sudo -u postgres pg_restore -d database_name file
