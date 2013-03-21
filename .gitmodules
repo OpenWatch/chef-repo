@@ -33,4 +33,4 @@
 	url = git@github.com:OpenWatch/sentry-cookbook.git
 [submodule "site-cookbooks/ow_sentry"]
 	path = site-cookbooks/ow_sentry
-	url = git@github.com:chrisballinger/ow-sentry-cookbook.git
+	url = git@github.com:OpenWatch/ow-sentry-cookbook.git
