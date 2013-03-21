@@ -97,13 +97,6 @@ GIT
   specs:
     openssh (0.8.4)
 
-GIT
-  remote: https://github.com/franco/chef-hostname.git
-  ref: master
-  sha: 340317918ec16e44faf2df035cc1b9ce1a4178b9
-  specs:
-    hostname (1.0.0)
-
 DEPENDENCIES
   application (>= 0)
   application_python (>= 0)
@@ -112,7 +105,6 @@ DEPENDENCIES
   ffmpeg (>= 0)
   git (>= 0)
   git_ssh_wrapper (>= 0)
-  hostname (>= 0)
   nginx (>= 0)
   openssh (>= 0)
   postgresql (>= 0)
