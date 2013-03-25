@@ -1,0 +1,27 @@
+{
+  "name": "ow_django",
+  "description": "OpenWatch base webserver",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "ow_users": {
+      "admin_gid": 999,
+      "active_gids": [0, 500, 999]
+    },
+    "ow_webserver" : {
+      "postgres_backup_databases" : ["openwatch"]
+    },
+    "ow_python" : {
+      "domain" : "openwatch.net"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[ow_server]",
+    "recipe[postgresql::server]",
+    "recipe[database::postgresql]",
+    "recipe[ow_webserver::postgres_backups]",
+    "recipe[ow_python]"
+  ]
+}
