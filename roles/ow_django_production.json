@@ -1,6 +1,6 @@
 {
-  "name": "ow_django",
-  "description": "OpenWatch base webserver",
+  "name": "ow_django_production",
+  "description": "OpenWatch Django production webserver",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
