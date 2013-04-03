@@ -18,10 +18,6 @@
   },
   "chef_type": "role",
   "run_list": [
-    "role[ow_server]",
-    "recipe[postgresql::server]",
-    "recipe[database::postgresql]",
-    "recipe[ow_webserver::postgres_backups]",
-    "recipe[ow_python]"
+    "role[ow_django]"
   ]
 }
