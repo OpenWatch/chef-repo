@@ -25,9 +25,6 @@
 [submodule "site-cookbooks/ow_media_process"]
 	path = site-cookbooks/ow_media_process
 	url = git@github.com:OpenWatch/ow-media-process-cookbook.git
-[submodule "site-cookbooks/nodejs"]
-	path = site-cookbooks/nodejs
-	url = git@github.com:OpenWatch/nodejs-cookbook.git
 [submodule "site-cookbooks/sentry"]
 	path = site-cookbooks/sentry
 	url = git@github.com:OpenWatch/sentry-cookbook.git
