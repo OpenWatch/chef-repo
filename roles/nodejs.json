@@ -6,13 +6,11 @@
   },
   "override_attributes": {
     "nodejs": {
-      "version": "0.8.20",
-      "npm": "1.2.11"
+      "install_method" : "package"
     }
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[nodejs]",
-    "recipe[nodejs::npm]"
+    "recipe[nodejs]"
   ]
 }

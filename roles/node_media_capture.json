@@ -5,10 +5,6 @@
   "default_attributes": {
   },
   "override_attributes": {
-    "nodejs": {
-      "version": "0.10.3",
-      "npm": "1.2.11"
-    }
   },
   "chef_type": "role",
   "run_list": [

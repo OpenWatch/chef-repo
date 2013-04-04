@@ -7,6 +7,10 @@
   "override_attributes": {
     "ow_webserver" : {
       "postgres_backup_databases" : ["etherpad"]
+    },
+    "nodejs": {
+      "version": "0.8.20",
+      "npm": "1.2.11"
     }
   },
   "chef_type": "role",
