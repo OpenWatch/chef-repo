@@ -20,7 +20,7 @@ Assuming you've set up gpg with the appropriate private key.
 ## 3. Restore
 If restoring to a fresh database:
 	
-		sudo -u postgres pg_restore -d database_name file
+		sudo -u postgres pg_restore --create --no-owner -d database_name file
 
 If restoring to a database with existing relations, use the --data-only flag:
 
