@@ -73,3 +73,28 @@ We specify **roles** for our server with json files in the `./roles` directory o
 
 ### Templates
 
+Templates are stored in a cookbook's `/templates/default/`. Note you can have a subdir within `/templates/` for each system type if that affects the template. In example, a template directory might look like:
+
+		templates/
+   			host-foo.example.com
+   			ubuntu-8.04
+   			ubuntu
+   			default
+
+Templates are written in [Erubis](http://www.kuwata-lab.com/erubis/), a ruby-like templating language. Let's say we have an example template in `/templates/default/config.yaml.erb`
+
+		Process:
+		  first: <%= @first_var %>
+		  …
+		  last: <%= @last_var %>
+		  
+In a recipe, you would render this template as `config.yaml` with the [template resource](http://docs.opscode.com/resource_template.html):
+
+		template "/destination/of/template/config.yaml" do
+		  source 'config.yaml.erb'  # filename within /templates/*/
+		  variables({
+		  :first_var => a_variable,
+		  …
+		  :last_var => another_variable
+		  })
+		end
