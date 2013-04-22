@@ -9,9 +9,6 @@
       "admin_gid": 999,
       "active_gids": [0, 500, 999]
     },
-    "ow_webserver" : {
-      "postgres_backup_databases" : ["openwatch"]
-    },
     "ow_python" : {
       "domain" : "staging.openwatch.net"
     }
