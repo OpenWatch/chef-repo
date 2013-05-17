@@ -5,6 +5,12 @@
   "default_attributes": {
   },
   "override_attributes": {
+    "ffmpeg":{
+      "git_revision": "e820e3a2591a0d544925ff1522d2a688a647f1b0"
+    },
+    "ow_media_process" : {
+      "django_api_url" : "openwatch.net/api/"
+    }
   },
   "chef_type": "role",
   "run_list": [

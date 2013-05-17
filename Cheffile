@@ -3,7 +3,6 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'nginx'
 cookbook 'postgresql'
 cookbook 'ffmpeg'
 cookbook 'git'

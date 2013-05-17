@@ -5,6 +5,9 @@
   "default_attributes": {
   },
   "override_attributes": {
+    "ow_media_capture" : {
+        "django_api_url" : "openwatch.net/api/"
+    }
   },
   "chef_type": "role",
   "run_list": [
