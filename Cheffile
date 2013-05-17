@@ -18,6 +18,7 @@ cookbook 'ubuntu'
 cookbook 'database'
 cookbook 'rabbitmq'
 cookbook 'firewall'
+cookbook 'nginx'
 
 cookbook "git_ssh_wrapper",
   :git => "https://github.com/OpenWatch/chef-git_ssh_wrapper.git"
