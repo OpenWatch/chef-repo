@@ -1,0 +1,25 @@
+{
+  "name": "ow_media_server",
+  "description": "OpenWatch NodeMediaCapture and NodeMediaProcess combined server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "ow_webserver": {
+      "open_tcp_ports" : [22, 80, 443, 3001]
+    },
+    "ow_media_capture": {
+      "app_domain" : "capture-staging.openwatch.net",
+      "django_api_url" : "staging.openwatch.net/api"
+    },
+    "ow_media_process": {
+      "app_domain" : "capture-staging.openwatch.net",
+      "django_api_url" : "staging.openwatch.net/api"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[node_media_capture]",
+    "role[node_media_process]"
+  ]
+}
