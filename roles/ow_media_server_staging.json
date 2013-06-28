@@ -10,11 +10,11 @@
     },
     "ow_media_capture": {
       "app_domain" : "capture-staging.openwatch.net",
-      "django_api_url" : "staging.openwatch.net/api"
+      "django_api_url" : "staging.openwatch.net/api/"
     },
     "ow_media_process": {
       "app_domain" : "capture-staging.openwatch.net",
-      "django_api_url" : "staging.openwatch.net/api"
+      "django_api_url" : "staging.openwatch.net/api/"
     }
   },
   "chef_type": "role",
