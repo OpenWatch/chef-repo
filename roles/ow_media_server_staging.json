@@ -1,5 +1,5 @@
 {
-  "name": "ow_media_server",
+  "name": "ow_media_server_staging",
   "description": "OpenWatch NodeMediaCapture and NodeMediaProcess combined server",
   "json_class": "Chef::Role",
   "default_attributes": {
