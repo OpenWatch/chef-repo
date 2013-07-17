@@ -19,7 +19,6 @@
     "recipe[yasm::source]",
     "recipe[redisio::install]",
     "recipe[redisio::enable]",
-    "recipe[ffmpeg]",
     "role[nodejs]",
     "recipe[ow_media_process]"
   ]

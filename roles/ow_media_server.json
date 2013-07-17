@@ -7,6 +7,14 @@
   "override_attributes": {
     "ow_webserver": {
       "open_tcp_ports" : [22, 80, 443, 3001]
+    },
+    "ow_media_capture": {
+      "app_domain" : "capture.openwatch.net",
+      "django_api_url" : "openwatch.net/api/"
+    },
+    "ow_media_process": {
+      "app_domain" : "capture.openwatch.net",
+      "django_api_url" : "openwatch.net/api/"
     }
   },
   "chef_type": "role",
